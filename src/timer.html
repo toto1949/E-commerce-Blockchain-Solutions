@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Resultats</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="css/timer.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+
+    
+  </head>
+  <body>
+    <div class="container" style="width: 900px;">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="jumbotron">
+              <h1 class="text-center">Blockchain vote</h1> 
+              <hr>
+  <div class="display">
+    <div id="clock" >
+      <h2 class="text-center" >Vote en Cours</h2>
+       <h2 class="text-center"> Résultats dans :</h2> 
+      <div id="numbers">
+        <span class="days" id="jour"></span>
+        <span class="hours" id="heure"></span>
+        <span class="minutes" id="minute"></span>
+        <span class="seconds" id="seconde"></span>
+      </div>
+      <div id="units">
+        <span>Jours</span>
+        <span>Heures</span>
+        <span>Minutes</span>
+        <span>Secondes</span>
+      </div>
+    </div>
+    <p id="demo"></p> 
+    <div id="door" style="display: none;">
+      <h1 class="event_title">Event Is Live</h1>
+      <p class="action_caption">Click the button below to enter Live Stream</p>
+      <button class="call_to_action_button" type="button" onclick="liveStream()">Enter Live Stream!</button>
+    </div>
+    
+  </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+          
+       
+    <script src="js/timer.js"></script>
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    
+  </body>
+</html>
